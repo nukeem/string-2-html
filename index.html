@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>Example</title>
+<style>
+body{ background: #ccc; padding: 0; margin: 0;}
+
+.wrapper{ width: 900px; background: #fff; margin: 0 auto; padding: 10px; }
+</style>
+</head>
+<body>
+<div id="wrapper" class="wrapper"></div>
+
+<script type="text/javascript" src="html.js"></script>
+<script type="text/javascript">
+var $ = new html();
+document.getElementById("wrapper").appendChild(
+    $.add("div[data-item=some content here(this kind of content)]", [ 
+        $.add("h1{HTML String Parser}"),
+        $.add("h2{Documentation}"),
+        $.add("section.intro", [
+            $.add("h3{Introduction}"),
+            $.add("p{This simple library allows you to use stings to create new DOM elements. It is no designed to create an entire site like this one but instead to simplify the creation of dynamic elements}")    
+        ]),
+        $.add("section.use", [
+            $.add("h3{How to use}"),
+            $.add("p{To use it add the library to the page, and initiate a html object}"),
+            $.add("pre{var $ = new html();}"),
+            $.add("p{You can then use the add method to create the element:}"),
+            $.add("pre{add(html string, [child]) returns Element}"),
+            $.add("p{html string is a string which must start with a tagname, properties of the element are then added in the following way:}"),
+            $.add("ul", [
+                $.add("li{# identifies an id to apply}"),
+                $.add("li{. identifies an class to apply}"),
+                $.add("li{&#123;string&#125; the content within the brakets are set as the value or innerHTML of the object}"),
+                $.add("li{(string) the value within the brakets are set as the value or innerHTML of the object}"),
+                $.add("li{[attribute=value] Square brackets indicate an attribute and value.}")
+            ]),
+            $.add("p{[child] is an optional which can be an Element or Array of elements to append or a function}")
+        ]),
+        $.add("section.example", [
+            $.add("h3{Example}"),
+            $.add("p{For example: }"),
+            $.add("pre{div#id.class-name[style=display:block]}")
+        ]),
+        $.add("div{Check the source of this page for more}")
+    ])
+);
+
+</script>
+</body>
+</html>
