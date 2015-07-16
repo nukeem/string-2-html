@@ -15,18 +15,19 @@ var html = new html();
 You can then use the add method to create the element:
 
 ```javascript
-html.add(html string, [child]) 
+html.add(html-string, [child]) 
 ```
 returns an Element
 
-html string is a string which must start with a tagname, properties of the element are then added in the following way:
+html-string is a string which must start with a tagname, properties of the element are then added in the following way:
 
 * &#35; identifies an id to apply
 * . identifies an class to apply
 * {string} the content within the brakets are set as the value or innerHTML of the object
 * (string) the value within the brakets are set as the value or innerHTML of the object
 * [attribute=value] Square brackets indicate an attribute and value.
-* [child] is an optional which can be an Element or Array of elements to append or a function
+
+[child] is an optional paramteter which can be an Element or Array of elements to append or a function
 
 #Example HTML string
 
