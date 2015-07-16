@@ -33,4 +33,4 @@ HASH identifies an id to apply
 div#id.class-name[style=display:block]
 ```
 
-Check the source of this page for more
+Check the demo for more.
