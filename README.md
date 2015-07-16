@@ -15,8 +15,9 @@ var $ = new html();
 You can then use the add method to create the element:
 
 ```javascript
-add(html string, [child]) returns Element
+add(html string, [child]) 
 ```
+returns an Element
 
 html string is a string which must start with a tagname, properties of the element are then added in the following way:
 
