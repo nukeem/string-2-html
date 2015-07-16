@@ -21,12 +21,12 @@ returns an Element
 
 html string is a string which must start with a tagname, properties of the element are then added in the following way:
 
-HASH identifies an id to apply
-. identifies an class to apply
-{string} the content within the brakets are set as the value or innerHTML of the object
-(string) the value within the brakets are set as the value or innerHTML of the object
-[attribute=value] Square brackets indicate an attribute and value.
-[child] is an optional which can be an Element or Array of elements to append or a function
+* &#35; identifies an id to apply
+* . identifies an class to apply
+* {string} the content within the brakets are set as the value or innerHTML of the object
+* (string) the value within the brakets are set as the value or innerHTML of the object
+* [attribute=value] Square brackets indicate an attribute and value.
+* [child] is an optional which can be an Element or Array of elements to append or a function
 
 #Example
 
