@@ -10,12 +10,12 @@ This simple library allows you to use stings to create new DOM elements. It is n
 
 To use it add the library to the page, and initiate a html object
 ```javascript
-var $ = new html();
+var html = new html();
 ```
 You can then use the add method to create the element:
 
 ```javascript
-add(html string, [child]) 
+html.add(html string, [child]) 
 ```
 returns an Element
 
@@ -28,10 +28,17 @@ html string is a string which must start with a tagname, properties of the eleme
 * [attribute=value] Square brackets indicate an attribute and value.
 * [child] is an optional which can be an Element or Array of elements to append or a function
 
-#Example
+#Example HTML string
 
 ```javascript
 div#id.class-name[style=display:block]
 ```
+
+returns Element:
+
+```html
+<div id="id" class="class-name" style="display:block"></div>
+```
+
 
 Check the demo for more.
